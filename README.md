@@ -1,23 +1,23 @@
 # Stock-Price-Prediction-Using-Machine-Learning
 **Libraries used**
 
-# Data Handling & Analysis
+**Data Handling & Analysis**
 import pandas as pd
 import numpy as np
-# Data Visualization
+**Data Visualization**
 import matplotlib.pyplot as plt
 import seaborn as sns
-# Stock Data Acquisition
+**Stock Data Acquisition**
 import yfinance as yf
-# Machine Learning (Linear Regression)
+**Machine Learning (Linear Regression)**
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-# Deep Learning (LSTM)
+**Deep Learning (LSTM)**
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
-# Date Handling
+**Date Handling**
 import datetime
 
 **Project Objective**
