@@ -4,19 +4,24 @@
 **Data Handling & Analysis**
 import pandas as pd
 import numpy as np
+
 **Data Visualization**
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 **Stock Data Acquisition**
 import yfinance as yf
+
 **Machine Learning (Linear Regression)**
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
 **Deep Learning (LSTM)**
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
+
 **Date Handling**
 import datetime
 
@@ -55,17 +60,25 @@ Plot both historical and future prices.
 
 **Key Findings**
 Linear Regression provides a basic benchmark with interpretable results, but lacks temporal memory.
+
 LSTM model performs better at capturing complex temporal patterns in stock data.
+
 Moving averages (SMA_10, SMA_30) are effective features for trend smoothing.
+
 Model evaluation metrics suggest LSTM offers lower error rates and better future prediction consistency.
 
 **Conclusion**
 LSTM outperforms Linear Regression in modeling stock prices due to its ability to learn time dependencies.
+
 Stock price trends can be forecasted moderately well using deep learning techniques when enough historical data is available.
+
 Combining machine learning models provides comparative insight into forecasting reliability.
 
  **Recommendations**
 Add more technical indicators (e.g., RSI, MACD) for richer feature sets.
+
 Explore ensemble models combining LSTM with other neural nets or regression.
+
 Extend the prediction range and validate over multiple Nifty 50 stocks.
+
 Incorporate macroeconomic indicators for multi-factor analysis.
