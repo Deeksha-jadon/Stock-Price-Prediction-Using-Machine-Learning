@@ -45,19 +45,6 @@ Plot historical price charts.
 Visualize moving averages.
 Generate a correlation matrix to assess feature relationships.
 
-**Linear Regression Modeling**
-Use engineered features to predict the next day's closing price.
-Evaluate model using metrics: MSE, RMSE, MAE, R².
-
-**LSTM Neural Network Modeling**
-Construct a multi-layered LSTM network to model time series behavior.
-Train and evaluate the model on scaled stock data.
-Plot actual vs predicted values to visualize model accuracy.
-
- **Future Price Prediction**
-Predict stock prices for the next 30 days using the trained LSTM model.
-Plot both historical and future prices.
-
 **Model Evaluation Metrics**
 | Metric                             |        Interpretation  
 | ---------------------------------- |-------------------------------------------------------- 
@@ -66,12 +53,30 @@ Plot both historical and future prices.
 | **MAE (Mean Absolute Error)**      |  Simple average error size; robust to outliers            
 | **R² (R-squared)**                 |  Value close to 1.0 indicates strong model fit      
 
-RMSE = ₹24 and MAE = ₹17 mean the model's predictions are close to real values.
+**Linear Regression Modeling**
+Use engineered features to predict the next day's closing price.
+Evaluate model using metrics: MSE, RMSE, MAE, R².
 
-R² = 0.99 shows that the model accurately captures 99% of the variation in stock prices.
+RMSE ≈ ₹24 and MAE ≈ ₹17 mean the model's predictions are very close to actual stock prices.
 
-Metrics demonstrate the model is well-tuned and reliable for Infosys stock prediction.
+R² ≈ 0.99 shows that the model captures 99% of the variation in Infosys stock prices.
 
+These metrics suggest that the Linear Regression model is well-fitted and performs strongly with minimal error.
+
+**LSTM Neural Network Modeling**
+Construct a multi-layered LSTM network to model time series behavior.
+Train and evaluate the model on scaled stock data.
+Plot actual vs predicted values to visualize model accuracy.
+
+ RMSE ≈ ₹41 and MAE ≈ ₹31 indicate slightly higher prediction error compared to Linear Regression.
+
+ R² ≈ 0.96 still reflects strong predictive performance, capturing 96% of the price variation.
+
+ While LSTM is powerful, this result suggests it may need more tuning or features to outperform simpler models like Linear Regression.
+
+ **Future Price Prediction**
+Predict stock prices for the next 30 days using the trained LSTM model.
+Plot both historical and future prices.
 
 **Key Findings**
 
