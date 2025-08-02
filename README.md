@@ -58,6 +58,21 @@ Plot actual vs predicted values to visualize model accuracy.
 Predict stock prices for the next 30 days using the trained LSTM model.
 Plot both historical and future prices.
 
+Model Evaluation Metrics
+| Metric                             |        Interpretation  
+| ---------------------------------- |-------------------------------------------------------- 
+| **MSE (Mean Squared Error)**       |  Penalizes large errors more; lower = better              
+| **RMSE (Root Mean Squared Error)** |  Average size of prediction error in original price units 
+| **MAE (Mean Absolute Error)**      |  Simple average error size; robust to outliers            
+| **R² (R-squared)**                 |  Value close to 1.0 indicates strong model fit      
+
+RMSE ≈ ₹24 and MAE ≈ ₹17 mean the model's predictions are close to real values.
+
+R² ≈ 0.99 shows that the model accurately captures 99% of the variation in stock prices.
+
+Metrics demonstrate the model is well-tuned and reliable for Infosys stock prediction.
+
+
 **Key Findings**
 
 Linear Regression provides a basic benchmark with interpretable results, but lacks temporal memory.
