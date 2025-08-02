@@ -58,7 +58,7 @@ Plot actual vs predicted values to visualize model accuracy.
 Predict stock prices for the next 30 days using the trained LSTM model.
 Plot both historical and future prices.
 
-Model Evaluation Metrics
+**Model Evaluation Metrics**
 | Metric                             |        Interpretation  
 | ---------------------------------- |-------------------------------------------------------- 
 | **MSE (Mean Squared Error)**       |  Penalizes large errors more; lower = better              
